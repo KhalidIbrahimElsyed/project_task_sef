@@ -1,0 +1,1389 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #1c1c1c; /* خلفية سوداء */
+    color: #cccccc; /* نصوص فضي */
+    width: 100%;
+    margin: 0;
+}
+
+/* ------------------ CLEARFIX HELPER ------------------ */
+.clearfix::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ------------------ MAIN CONTAINER (FIXED 1200px) ------------------ */
+.container
+{
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+/* ------------------ HEADER (FIXED) ------------------ */
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(20, 20, 20, 0.9);
+    padding-right: 25px;
+    z-index: 100;
+    border-bottom: 1px solid #333;
+}
+
+.homeicon
+{
+    color: #cccccc;
+    font-size: 22px;
+    padding-top: 15px;
+    padding-left: 25px;
+}
+
+.header-search-wrap
+{
+    display: inline;
+}
+
+.header input[type="text"]
+{
+    position: absolute;
+    width: 240px;
+    height: 30px;
+    background-color: #333333;
+    color: #cccccc;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 25px;
+    border: 1px solid #555;
+    padding-left: 15px;
+}
+
+.searchicon
+{
+    position: absolute;
+    top: 17px;
+    left: 270px;
+    font-size: 15px;
+    color: #aaaaaa;
+}
+
+.headerlinks
+{
+    list-style: none;
+    float: right;
+}
+
+.headerlinks li
+{
+    margin-right: 25px;
+    margin-top: 13px;
+    display: inline-block;
+}
+
+.headerlinks li a
+{
+    text-decoration: none;
+    color: #cccccc;
+    position: relative;
+    padding-bottom: 7px;
+}
+
+.headerlinks li a:after
+{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #a855f7; /* هوفر بنفسجي */
+    opacity: 0;
+}
+
+.headerlinks li a:hover:after
+{
+    width: 100%;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.list-dropdown
+{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown
+{
+    position: absolute;
+    width: 150px;
+    padding: 5px;
+    background-color: #222222;
+    text-align: center;
+    left: 0;
+    top: 150%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 50;
+    border: 1px solid #444444;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.dropdown li a
+{
+    color: #cccccc;
+    display: block;
+    padding: 10px 0px;
+    text-align: center;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.dropdown li a:hover {
+    color: #a855f7; /* هوفر بنفسجي */
+}
+
+.list-dropdown:hover .dropdown
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown li
+{
+    display: block;
+}
+
+/* ------------------ HERO SECTION ------------------ */
+.div1
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUsCHZuSWJnmVIy-urBF3fZ3-F4pLYcEqjVM4xpXTJ5w&s=10');
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.mainparagraph
+{
+    width: 60%;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title2
+{
+    font-size: 65px;
+    text-transform: uppercase;
+    color: #eeeeee;
+}
+
+.paragraph1
+{
+    color: #aaaaaa;
+    font-size: 15px;
+    padding: 12px 0px;
+    letter-spacing: 2px;
+}
+
+.btn1
+{
+    font-size: 18px;
+    border: 1px solid #555;
+    border-radius: 15px;
+    text-transform: capitalize;
+    padding: 16px 14px;
+    margin-right: 10px;
+    width: 180px;
+    height: 55px;
+    background-color: transparent;
+    color: #cccccc;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn1:hover
+{
+    background-color: #a855f7; /* هوفر بنفسجي */
+    color: #ffffff;
+    border-color: #a855f7;
+}
+
+.btn2
+{
+    font-size: 18px;
+    border: 0;
+    border-radius: 15px;
+    text-transform: capitalize;
+    padding: 16px 14px;
+    color: #1c1c1c;
+    background-color: #cccccc;
+    width: 180px;
+    height: 55px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn2:hover
+{
+    background-color: #a855f7; /* هوفر بنفسجي */
+    color: #ffffff;
+}
+
+/* ------------------ SECTION 2 - WELCOME ------------------ */
+.h2welcome
+{
+    text-align: center;
+    padding-top: 70px;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #eeeeee;
+}
+
+.hrwelcome
+{
+    width: 90px;
+    border: 2px solid #555555;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.parent
+{
+    overflow: auto;
+    width: 100%;
+    height: 100vh;
+    text-transform: capitalize;
+}
+
+.sec2-row
+{
+    width: 1100px;
+    margin: 80px auto 0 auto;
+    text-align: center; 
+}
+
+.sec2div1
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 320px;
+    height: 220px;
+    margin: 0 15px;
+    text-align: center;
+    border: 1px solid #444444;
+    background-color: #222222;
+    position: relative;
+    border-radius: 10px;
+    z-index: 1; /* السر هنا عشان الهوفر يظهر فوق الخلفية بتاعت الديف ورا الكلام */
+}
+
+.iconsec2
+{
+    font-size: 30px;
+    color: #cccccc;
+    padding-top: 20px;
+    transition: 0.3s;
+}
+
+.sec2link
+{
+    text-decoration: none;
+    display: block;
+    color: #cccccc;
+    transition: 0.3s;
+}
+
+.sec2h2,
+.sec2p2,
+.sec2link
+{
+    padding-top: 22px;
+}
+
+.sec2div1:hover .sec2link
+{
+    color: #ffffff;
+}
+
+.sec2div1:hover .iconsec2
+{
+    color: #ffffff;
+}
+
+.sec2div1:after
+{
+    position: absolute;
+    content: "";
+    width: 0; /* بيطلع من الزاوية اهو زي الاصل */
+    height: 0; /* بيطلع من الزاوية اهو زي الاصل */
+    top: 0;
+    left: 0;
+    background-color: #a855f7; /* تاثير بنفسجي */
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.sec2div1:hover::after
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.sec2h2 {
+    color: #cccccc;
+    transition: 0.3s;
+}
+
+.sec2div1:hover .sec2h2
+{
+    color: #ffffff;
+}
+
+.sec2p2
+{
+    color: #aaaaaa;
+    transition: 0.3s;
+}
+
+.sec2div1:hover .sec2p2
+{
+    color: #ffffff;
+}
+
+/* ------------------ SECTION 3 - FEATURED WORK ------------------ */
+.sec3
+{
+    width: 100%;
+    background-color: #1a1a1a;
+    height: 100vh;
+    overflow: auto;
+}
+
+.h2sec3
+{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #eeeeee;
+}
+
+.sec3-row
+{
+    width: 1100px;
+    margin: 50px auto 0 auto;
+    overflow: auto;
+}
+
+.sec3div1,
+.sec3div2,
+.sec3div3,
+.sec3div4,
+.sec3div5,
+.sec3div6
+{
+    float: left;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.sec3div1,
+.sec3div4
+{
+    margin-left: 50px;
+}
+
+.sec3div4,
+.sec3div5,
+.sec3div6
+{
+    margin-top: 30px;
+}
+
+.sec3div1 img,
+.sec3div2 img,
+.sec3div3 img,
+.sec3div4 img,
+.sec3div5 img,
+.sec3div6 img
+{
+    width: 300px;
+    height: 200px;
+    display: block;
+}
+
+.sec3layer1,
+.sec3layer2,
+.sec3layer3,
+.sec3layer4,
+.sec3layer5,
+.sec3layer6
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: #ffffff;
+    text-align: center;
+    visibility: hidden;
+}
+
+.sec3div1:hover .sec3layer1,
+.sec3div2:hover .sec3layer2,
+.sec3div3:hover .sec3layer3,
+.sec3div4:hover .sec3layer4,
+.sec3div5:hover .sec3layer5,
+.sec3div6:hover .sec3layer6
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.sec3icon2,
+.sec3icon3
+{
+    background-color: #333333;
+    width: 40px;
+    height: 30px;
+    padding-top: 7px;
+    text-align: center;
+    color: #cccccc;
+    font-size: 20px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.sec3icon2:hover,
+.sec3icon3:hover {
+    background-color: #a855f7; /* هوفر بنفسجي */
+    color: #ffffff;
+}
+
+.sec3icons a
+{
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    margin: 0 5px;
+}
+
+.h3category
+{
+    color: #cccccc;
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.sec3span
+{
+    position: relative;
+    top: 20px;
+    color: #aaaaaa;
+}
+
+/* ------------------ SECTION 4 - WHAT WE OFFER ------------------ */
+.containersec4
+{
+    width: 100%;
+    margin: auto;
+}
+
+.sec4h2
+{
+    text-align: center;
+    padding-top: 85px;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #eeeeee;
+}
+
+.hrsec4
+{
+    width: 90px;
+    border: 2px solid #555555;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.offeritem
+{
+    width: 300px;
+    height: 200px;
+    border: 1px solid #444444;
+    background-color: #222222;
+    padding: 25px 15px 30px 50px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1; /* عشان الهوفر يظهر فوق الخلفية */
+}
+
+.parentsec4
+{
+    overflow: auto;
+    width: 1100px;
+    margin: 40px auto;
+}
+
+.offerdiv
+{
+    float: left;
+    width: 300px;
+    margin: 25px 0;
+    margin-left: 50px;
+    position: relative;
+}
+
+.item2
+{
+    margin-left: 50px;
+}
+
+.offeritem h2 {
+    color: #cccccc;
+    transition: 0.3s;
+}
+
+p
+{
+    color: #aaaaaa;
+    padding-top: 7px;
+    transition: 0.3s;
+}
+
+.aaaaa
+{
+    position: absolute;
+    left: 10px;
+    top: 25px;
+    font-size: 30px;
+    color: #cccccc;
+    transition: 0.3s;
+}
+
+.offeritem:after
+{
+    position: absolute;
+    content: "";
+    width: 0; /* بيطلع من الزاوية اهو زي الاصل */
+    height: 0; /* بيطلع من الزاوية اهو زي الاصل */
+    top: 0;
+    left: 0;
+    background-color: #a855f7; /* تاثير بنفسجي */
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.offeritem:hover::after
+{
+    width: 300px;
+    height: 200px;
+    opacity: 0.8;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.offeritem:hover p
+{
+    color: #ffffff;
+}
+
+.offeritem:hover h2
+{
+    color: #ffffff;
+}
+
+.offeritem:hover .aaaaa
+{
+    color: #ffffff;
+}
+
+/* ------------------ SECTION 5 - WHY CHOOSE US ------------------ */
+.sec5container
+{
+    width: 100%;
+    margin: auto;
+}
+
+.parentsec5
+{
+    width: 1100px;
+    height: 500px;
+    overflow: hidden; /* تم منع الاسكرول */
+    padding-top: 50px;
+    margin: 90px auto;
+}
+
+.divchooseus1
+{
+    float: left;
+    width: 550px;
+}
+
+.divchooseus2
+{
+    width: 500px;
+    float: right; 
+    text-align: right; 
+}
+
+.sec5title
+{
+    padding-top: 40px;
+}
+
+.iconinfo
+{
+    color: #a0a0a0;
+    padding-top: 20px;
+}
+
+.sec5h2
+{
+    text-transform: capitalize;
+    font-size: 40px;
+    color: #eeeeee;
+}
+
+.sec5hr
+{
+    width: 70px;
+    border: 2px solid #555555;
+    margin-top: 10px;
+}
+
+.sec5p
+{
+    color: #aaaaaa;
+    padding-top: 40px;
+}
+
+.sec5listul
+{
+    list-style: none;
+    padding-top: 25px;
+}
+
+.sec5listul li
+{
+    margin-bottom: 15px;
+    color: #cccccc;
+}
+
+.sec5bullet
+{
+    text-align: center;
+    list-style: none;
+    width: 350px; /* תوازي عرض الصورة */
+    display: inline-block; 
+    margin-top: 10px;
+}
+
+.sec5bullet li.active
+{
+    background-color: #a855f7; /* بنفسجي */
+}
+
+.sec5bullet li
+{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 10px 5px;
+    display: inline-block;
+    background-color: #555555;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sec5bullet li:hover
+{
+    background-color: #a855f7; /* هوفر بنفسجي */
+}
+
+/* ------------------ SECTION 6 - STATS ------------------ */
+.sec6parent
+{
+    width: 100%;
+    height: 400px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJakdQ8DA7iQj41Na7rFNijhEukpPSyv8H6PsKGy0FVg&s=10');
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sec6-container
+{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.sec6items
+{
+    padding-top: 150px;
+    overflow: auto;
+}
+
+.sec6item
+{
+    float: left;
+    text-align: center;
+    width: 25%;
+    color: #ffffff;
+}
+
+.sec6-item-icon
+{
+    color: #cccccc;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.sec6-item-title
+{
+    color: #ffffff;
+}
+
+.sec6-item-text
+{
+    color: #aaaaaa;
+}
+
+/* ------------------ SECTION 7 - PRICING ------------------ */
+.pricing
+{
+    padding-top: 120px;
+    text-align: center;
+}
+
+.pricing-title
+{
+    font-size: 40px;
+    color: #eeeeee;
+}
+
+.pricing-container
+{
+    width: 100%;
+    margin: auto;
+}
+
+.pricing-divs
+{
+    overflow: auto;
+    width: 1100px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.pricimg-div1
+{
+    width: 300px;
+    border: 1px solid #444444;
+    background-color: #222222;
+    padding: 30px 15px;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 50px;
+    z-index: 1; /* عشان الهوفر يظهر فوق الخلفية */
+}
+
+.div-pric2
+{
+    margin-left: 50px;
+}
+
+.pricimg-div1-p
+{
+    text-transform: uppercase;
+    color: #cccccc;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.pricing-div1-month
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #555555;
+    margin: 20px auto;
+    padding: 12px 0;
+    transition: 0.3s;
+}
+
+.h3-dollar
+{
+    font-size: 35px;
+    color: #eeeeee;
+}
+
+.span-month
+{
+    text-transform: uppercase;
+    color: #aaaaaa;
+}
+
+.pricing-ul
+{
+    list-style: none;
+    text-transform: capitalize;
+    color: #cccccc;
+}
+
+.pricing-ul li
+{
+    padding: 10px 0;
+}
+
+.pricing-btn
+{
+    width: 170px;
+    height: 30px;
+    border: 1px solid #555555;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    background-color: #333333;
+    color: #cccccc;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pricing-btn:hover {
+    background-color: #a855f7; /* هوفر بنفسجي */
+    color: #ffffff;
+    border-color: #a855f7;
+}
+
+.pricimg-div1:after
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #a855f7; /* تاثير بنفسجي */
+    transition: .5s;
+    opacity: .5;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.pricimg-div1:hover:after
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.pricimg-div1:hover .pricing-div1-month
+{
+    border: 2px solid #ffffff;
+}
+
+.pricimg-div1:hover .pricimg-div1-p
+{
+    color: #ffffff;
+}
+
+/* ------------------ SECTION 8 - ABOUT (TESTIMONIALS) ------------------ */
+.parent-about
+{
+    width: 100%;
+    height: 400px;
+    background-image: url('https://images.unsplash.com/photo-1594035910387-fea47794261f?w=1920&h=400&fit=crop');
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 130px;
+}
+
+.overlay-about
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.container-about
+{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.about-content
+{
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    overflow: auto;
+}
+
+.about-item1
+{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.about-item1-info
+{
+    text-transform: capitalize;
+    padding: 130px 40px 10px 150px;
+    position: relative;
+    line-height: 1.4;
+}
+
+.about-item1-info img
+{
+    border-radius: 50%;
+    position: absolute;
+    left: 50px;
+    top: 120px;
+}
+
+.about-p
+{
+    margin: 0px 30px 0px 50px;
+    line-height: 1.4;
+    text-transform: capitalize;
+    color: #cccccc;
+}
+
+.about-item1-info h3
+{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.about-item1-info span
+{
+    color: #aaaaaa;
+    font-size: 20px;
+}
+
+/* ------------------ SECTION 9 - TEAM ------------------ */
+.team-title
+{
+    padding-top: 120px;
+}
+
+.team-title h2
+{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 40px;
+    color: #eeeeee;
+}
+
+.team-container
+{
+    width: 100%;
+    margin: auto;
+}
+
+.team-parent
+{
+    overflow: auto;
+    width: 1100px;
+    margin: 50px auto;
+}
+
+.team-items
+{
+    float: left;
+    width: 300px;
+    background-color: #222222;
+    border: 1px solid #444444;
+    text-align: center;
+    padding: 18px 14px;
+    position: relative;
+    border-radius: 10px;
+    margin-left: 50px;
+    z-index: 1; /* عشان الهوفر يظهر فوق الخلفية */
+}
+
+.team-div1-img1
+{
+    width: 85%;
+    margin: auto;
+    position: relative;
+}
+
+.team-div1-img1 img
+{
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+.team-icons
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(168, 85, 247, 0.6); /* تأثير بنفسجي للصورة */
+    visibility: hidden;
+}
+
+.team-items:hover .team-icons
+{
+    visibility: visible;
+}
+
+.team-icons a
+{
+    width: 40px;
+    height: 40px;
+    display: block;
+    color: #cccccc;
+    background-color: #333333;
+    margin-left: auto;
+    transition: 0.3s;
+}
+
+.team-icons a:hover {
+    background-color: #a855f7; /* هوفر بنفسجي */
+    color: #ffffff;
+}
+
+.team-icons a i
+{
+    line-height: 40px;
+}
+
+.team-info-title
+{
+    text-transform: capitalize;
+    color: #eeeeee;
+    padding: 12px 0px;
+    transition: 0.3s;
+}
+
+.team-info-paragraph
+{
+    text-transform: uppercase;
+    color: #aaaaaa;
+    transition: 0.3s;
+}
+
+.team-items:hover .team-info-title
+{
+    color: #ffffff;
+    z-index: 6;
+    position: relative;
+}
+
+.team-items:hover .team-info-paragraph
+{
+    color: #ffffff;
+    z-index: 6;
+    position: relative;
+}
+
+.team-items:after
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #a855f7; /* تاثير بنفسجي */
+    transition: .5s;
+    opacity: .5;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.team-items:hover:after
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+/* ------------------ SECTION 10 - RECENT NEWS ------------------ */
+.news-title
+{
+    margin-top: 60px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+.news-title h2
+{
+    font-size: 40px;
+    color: #eeeeee;
+}
+
+.news-container
+{
+    width: 100%;
+    margin: auto;
+}
+
+.news-parent
+{
+    width: 1100px;
+    margin: 50px auto;
+    overflow: auto;
+}
+
+.news-item
+{
+    width: 300px;
+    text-align: center;
+    float: left;
+    border: 1px solid #444444;
+    border-radius: 10px;
+    position: relative;
+    margin-left: 50px;
+    background-color: #222222;
+    z-index: 1; /* عشان الهوفر يظهر فوق الخلفية */
+}
+
+.news-item:after
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #a855f7; /* تاثير بنفسجي */
+    transition: .5s;
+    opacity: .5;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.news-item:hover:after
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.news-item:hover .news-icons ul
+{
+    color: #ffffff;
+}
+
+.news-item:hover h3
+{
+    color: #ffffff;
+}
+
+.news-item:hover .news-icons p
+{
+    color: #ffffff;
+}
+
+.news-item img
+{
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.news-icons
+{
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+
+.news-icons ul
+{
+    list-style: none;
+    transition: 0.3s;
+}
+
+.news-icons ul li
+{
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 25px;
+    color: #cccccc;
+}
+
+.news-icons ul li a
+{
+    text-decoration: none;
+}
+
+.news-icons h3
+{
+    margin: 15px 0px;
+    color: #eeeeee;
+    transition: 0.3s;
+}
+
+.news-icons p
+{
+    margin-bottom: 25px;
+    color: #aaaaaa;
+    transition: 0.3s;
+}
+
+.news-read-more
+{
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #cccccc;
+    transition: 0.3s;
+}
+
+.ffff
+{
+    color: #cccccc;
+    transition: 0.3s;
+}
+
+.news-item:hover .news-read-more,
+.news-item:hover .ffff {
+    color: #ffffff; /* هوفر ابيض عشان يبان عالبنفسجي */
+}
+
+/* ------------------ FOOTER ------------------ */
+.footer
+{
+    width: 100%;
+    background-color: #111111;
+    padding: 20px 0px;
+    margin-top: 100px;
+}
+
+.content-footer
+{
+    margin: auto;
+    height: 300px;
+    width: 40%;
+    text-align: center;
+}
+
+.img-footer,
+.img-footer img
+{
+    width: 250px;
+    height: 200px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.ul-footer
+{
+    margin-top: 20px;
+}
+
+.ul-footer ul
+{
+    list-style: none;
+    text-align: center;
+}
+
+.ul-footer ul li
+{
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #333333;
+    color: #cccccc;
+    font-size: 30px;
+    padding-top: 11px;
+    position: relative;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.ul-footer p
+{
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    padding-top: 15px;
+}
+
+.ul-footer ul li:after
+{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #a855f7;
+    transition: .5s;
+    opacity: .5;
+    border-radius: 10px;
+}
+
+.ul-footer ul li:hover
+{
+    background-color: #a855f7; /* هوفر بنفسجي */
+    color: #ffffff;
+}
