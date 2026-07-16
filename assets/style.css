@@ -8,8 +8,8 @@
 body
 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #1c1c1c; /* خلفية سوداء */
-    color: #cccccc; /* نصوص فضي */
+    background-color: #1c1c1c;
+    color: #cccccc;
     width: 100%;
     margin: 0;
 }
@@ -109,7 +109,7 @@ body
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #a855f7; /* هوفر بنفسجي */
+    background-color: #a855f7;
     opacity: 0;
 }
 
@@ -155,7 +155,7 @@ body
 }
 
 .dropdown li a:hover {
-    color: #a855f7; /* هوفر بنفسجي */
+    color: #a855f7;
 }
 
 .list-dropdown:hover .dropdown
@@ -234,7 +234,7 @@ body
 
 .btn1:hover
 {
-    background-color: #a855f7; /* هوفر بنفسجي */
+    background-color: #a855f7;
     color: #ffffff;
     border-color: #a855f7;
 }
@@ -256,7 +256,7 @@ body
 
 .btn2:hover
 {
-    background-color: #a855f7; /* هوفر بنفسجي */
+    background-color: #a855f7;
     color: #ffffff;
 }
 
@@ -305,7 +305,7 @@ body
     background-color: #222222;
     position: relative;
     border-radius: 10px;
-    z-index: 1; /* السر هنا عشان الهوفر يظهر فوق الخلفية بتاعت الديف ورا الكلام */
+    z-index: 1;
 }
 
 .iconsec2
@@ -345,11 +345,11 @@ body
 {
     position: absolute;
     content: "";
-    width: 0; /* بيطلع من الزاوية اهو زي الاصل */
-    height: 0; /* بيطلع من الزاوية اهو زي الاصل */
+    width: 0;
+    height: 0;
     top: 0;
     left: 0;
-    background-color: #a855f7; /* تاثير بنفسجي */
+    background-color: #a855f7;
     opacity: 0;
     z-index: -1;
     transition: 0.5s;
@@ -496,7 +496,7 @@ body
 
 .sec3icon2:hover,
 .sec3icon3:hover {
-    background-color: #a855f7; /* هوفر بنفسجي */
+    background-color: #a855f7;
     color: #ffffff;
 }
 
@@ -556,7 +556,7 @@ body
     padding: 25px 15px 30px 50px;
     border-radius: 10px;
     position: relative;
-    z-index: 1; /* عشان الهوفر يظهر فوق الخلفية */
+    z-index: 1;
 }
 
 .parentsec4
@@ -606,11 +606,11 @@ p
 {
     position: absolute;
     content: "";
-    width: 0; /* بيطلع من الزاوية اهو زي الاصل */
-    height: 0; /* بيطلع من الزاوية اهو زي الاصل */
+    width: 0;
+    height: 0;
     top: 0;
     left: 0;
-    background-color: #a855f7; /* تاثير بنفسجي */
+    background-color: #a855f7;
     opacity: 0;
     z-index: -1;
     transition: 0.5s;
@@ -651,7 +651,7 @@ p
 {
     width: 1100px;
     height: 500px;
-    overflow: hidden; /* تم منع الاسكرول */
+    overflow: hidden;
     padding-top: 50px;
     margin: 90px auto;
 }
@@ -716,14 +716,14 @@ p
 {
     text-align: center;
     list-style: none;
-    width: 350px; /* תوازي عرض الصورة */
+    width: 350px;
     display: inline-block; 
     margin-top: 10px;
 }
 
 .sec5bullet li.active
 {
-    background-color: #a855f7; /* بنفسجي */
+    background-color: #a855f7;
 }
 
 .sec5bullet li
@@ -740,7 +740,7 @@ p
 
 .sec5bullet li:hover
 {
-    background-color: #a855f7; /* هوفر بنفسجي */
+    background-color: #a855f7;
 }
 
 /* ------------------ SECTION 6 - STATS ------------------ */
@@ -831,7 +831,7 @@ p
     border-radius: 10px;
     position: relative;
     margin-left: 50px;
-    z-index: 1; /* عشان الهوفر يظهر فوق الخلفية */
+    z-index: 1;
 }
 
 .div-pric2
@@ -897,7 +897,7 @@ p
 }
 
 .pricing-btn:hover {
-    background-color: #a855f7; /* هوفر بنفسجي */
+    background-color: #a855f7;
     color: #ffffff;
     border-color: #a855f7;
 }
@@ -910,7 +910,7 @@ p
     height: 0;
     top: 0;
     left: 0;
-    background-color: #a855f7; /* تاثير بنفسجي */
+    background-color: #a855f7;
     transition: .5s;
     opacity: .5;
     border-radius: 10px;
@@ -1054,7 +1054,7 @@ p
     position: relative;
     border-radius: 10px;
     margin-left: 50px;
-    z-index: 1; /* عشان الهوفر يظهر فوق الخلفية */
+    z-index: 1;
 }
 
 .team-div1-img1
@@ -1078,7 +1078,7 @@ p
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(168, 85, 247, 0.6); /* تأثير بنفسجي للصورة */
+    background-color: rgba(168, 85, 247, 0.6);
     visibility: hidden;
 }
 
@@ -1099,7 +1099,7 @@ p
 }
 
 .team-icons a:hover {
-    background-color: #a855f7; /* هوفر بنفسجي */
+    background-color: #a855f7;
     color: #ffffff;
 }
 
@@ -1145,7 +1145,7 @@ p
     height: 0;
     top: 0;
     left: 0;
-    background-color: #a855f7; /* تاثير بنفسجي */
+    background-color: #a855f7;
     transition: .5s;
     opacity: .5;
     border-radius: 10px;
@@ -1198,7 +1198,7 @@ p
     position: relative;
     margin-left: 50px;
     background-color: #222222;
-    z-index: 1; /* عشان الهوفر يظهر فوق الخلفية */
+    z-index: 1;
 }
 
 .news-item:after
@@ -1209,7 +1209,7 @@ p
     height: 0;
     top: 0;
     left: 0;
-    background-color: #a855f7; /* تاثير بنفسجي */
+    background-color: #a855f7;
     transition: .5s;
     opacity: .5;
     border-radius: 10px;
@@ -1304,7 +1304,7 @@ p
 
 .news-item:hover .news-read-more,
 .news-item:hover .ffff {
-    color: #ffffff; /* هوفر ابيض عشان يبان عالبنفسجي */
+    color: #ffffff;
 }
 
 /* ------------------ FOOTER ------------------ */
@@ -1384,6 +1384,6 @@ p
 
 .ul-footer ul li:hover
 {
-    background-color: #a855f7; /* هوفر بنفسجي */
+    background-color: #a855f7;
     color: #ffffff;
 }
